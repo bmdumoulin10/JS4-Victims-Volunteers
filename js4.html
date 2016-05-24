@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS4: Victims & Volunteers</title>
+    </head>
+    <body>
+        <script>
+            var victims = prompt('How many disaster victims do you wish to enter?')
+            var volunteers = prompt('How many disaster volunteers do you wish to enter?')
+            var nameArr = []
+            var phoneArr = []
+            var streetArr = []
+            var nameVolArr = []
+            var phoneVolArr = []
+            var streetVolArr = []
+            
+            for(var i = 0; i < victims; i++){
+                nameArr.push(prompt("Victim Name:"))
+                phoneArr.push(prompt("Victim Phone Number:"))
+                streetArr.push(prompt("Victim Street:"))
+            }
+            
+            for(var i = 0; i < volunteers; i++){
+                nameVolArr.push(prompt("Volunteer Name:"))
+                phoneVolArr.push(prompt("Volunteer Phone Number:"))
+                streetVolArr.push(prompt("Volunteer Street:"))
+            }
+            
+            alert('There are' + ' ' + victims + ' ' + 'victims' + '\n' + 'The victims names are:' + ' ' + nameArr.join() + '\n' + 'Their phone numbers are:' + ' ' + phoneArr.join() + '\n' + 'Their street addresses are:' + ' ' + streetArr.join() + '\n' + '\n' + 'There are' + ' ' + volunteers + ' ' + 'volunteers' + '\n' + 'The volunteers names are:' + ' ' + nameVolArr.join() + '\n' + 'Their phone numbers are:' + ' ' + phoneVolArr.join() + '\n' + 'Their street addresses are:' + ' ' + streetVolArr.join())
+        </script>
+   </body>
+</html>
+
